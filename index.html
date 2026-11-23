@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seongju Cho</title>
+<meta name="description" content="Seongju Cho, graduate student in the Lab of Computational Biology at POSTECH.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1f2328;
+    --muted: #5b6168;
+    --rule: #d9dcdf;
+    --link: #1a4f8b;
+    --bg: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 56px 24px 72px;
+  }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  header.profile {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .photo {
+    flex: 0 0 150px;
+    width: 150px;
+    height: 180px;
+    border: 1px solid var(--rule);
+    background: #f3f4f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .photo .initials { font-size: 40px; color: var(--muted); letter-spacing: 2px; }
+  h1 { font-size: 34px; font-weight: 600; margin: 0 0 6px; line-height: 1.2; }
+  .role { margin: 0; color: var(--ink); }
+  .affil { margin: 0 0 12px; color: var(--muted); }
+  .links { margin: 0; font-size: 16px; }
+  .links span + span::before { content: "|"; color: var(--rule); margin: 0 10px; }
+
+  section { margin-top: 36px; }
+  h2 {
+    font-size: 21px;
+    font-weight: 600;
+    margin: 0 0 12px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--rule);
+  }
+  p { margin: 0 0 12px; }
+  ul { margin: 0; padding-left: 22px; }
+  li { margin-bottom: 4px; }
+
+  .entry { margin-bottom: 14px; }
+  .entry .head { display: flex; justify-content: space-between; gap: 0 16px; flex-wrap: wrap; }
+  .entry .head strong { font-weight: 600; }
+  .entry .date { color: var(--muted); white-space: nowrap; }
+  .entry .sub { color: var(--muted); }
+
+  .legend { color: var(--muted); font-size: 15px; margin-bottom: 14px; }
+  ol.pubs { padding-left: 22px; margin: 0; }
+  ol.pubs li { margin-bottom: 14px; }
+  .pub-title { display: block; font-weight: 600; }
+  .venue { font-style: italic; }
+  .status { color: var(--muted); }
+
+  footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
+
+  @media (max-width: 560px) {
+    main { padding: 32px 18px 56px; }
+    header.profile { flex-direction: column; align-items: flex-start; gap: 20px; }
+    h1 { font-size: 28px; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <header class="profile">
+    <div class="photo">
+      <img src="photo.jpg" alt="Seongju Cho" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'initials',textContent:'SC'}))">
+    </div>
+    <div>
+      <h1>Seongju Cho</h1>
+      <p class="role">Graduate Student</p>
+      <p class="affil">
+        <a href="https://cb.postech.ac.kr/lcb_postech/index.do">Lab of Computational Biology</a>,
+        <a href="https://www.postech.ac.kr/eng/index.do">POSTECH</a>
+      </p>
+      <p class="links">
+        <span><a href="mailto:seongju6787@postech.ac.kr">seongju6787@postech.ac.kr</a></span>
+      </p>
+    </div>
+  </header>
+
+  <section id="bio">
+    <h2>Brief Bio</h2>
+    <p>
+      I am a graduate student in the
+      <a href="https://cb.postech.ac.kr/lcb_postech/index.do">Lab of Computational Biology</a>
+      at POSTECH, advised by
+      <a href="https://scholar.google.com/citations?user=m72LMXYAAAAJ&amp;hl=en">Prof. Jong Kyoung Kim</a>.
+      I received my B.S. in Life Sciences from POSTECH in June 2023, graduating summa cum laude.
+    </p>
+    <p>My current work focuses on:</p>
+    <ul>
+      <li>Multi-omics analysis of lung cancer</li>
+      <li>Developing frameworks and methods for single-cell atlas analysis</li>
+    </ul>
+  </section>
+
+  <section id="research">
+    <h2>Research Interests</h2>
+    <ul>
+      <li>Alveolar regeneration</li>
+      <li>Comparative analysis of NSCLC subtypes</li>
+      <li>Early tumorigenesis of lung adenocarcinoma (LUAD)</li>
+      <li>Virtual transcriptomics</li>
+      <li>Single-cell atlas analysis</li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="head">
+        <strong>Pohang University of Science and Technology (POSTECH), Pohang, Korea</strong>
+        <span class="date">Present</span>
+      </div>
+      <div>Graduate Student, Lab of Computational Biology</div>
+      <div class="sub">Advisor: Prof. Jong Kyoung Kim</div>
+    </div>
+    <div class="entry">
+      <div class="head">
+        <strong>Pohang University of Science and Technology (POSTECH), Pohang, Korea</strong>
+        <span class="date">Jun 2023</span>
+      </div>
+      <div>B.S., Life Sciences, <em>summa cum laude</em></div>
+    </div>
+  </section>
+
+  <section id="awards">
+    <h2>Honors &amp; Awards</h2>
+    <div class="entry">
+      <div class="head">
+        <strong>Best Presentation Award, Graduate Student Presentation Session</strong>
+        <span class="date">Sep 2026</span>
+      </div>
+      <div class="sub">The 35th International Korea Genome Organization (KOGO) Annual Conference</div>
+    </div>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <p class="legend">* Equal contribution &nbsp;&nbsp; + Corresponding author</p>
+    <ol class="pubs" reversed>
+      <li>
+        <span class="pub-title">NCS: Matched-null calibration enables batch-robust signature scoring at population scale</span>
+        <b>S. Cho</b>, J. K. Kim+<br>
+        <span class="status">In preparation</span>
+      </li>
+      <li>
+        <span class="pub-title">AT2 MHC-II&ndash;Treg axis links antigen presentation to alveolar regeneration by controlling progenitor fates</span>
+        S. Park*, <b>S. Cho</b>*, J. Min*, C. Jeong, C.-H. Lee, Y.-M. Kim, S. Moon, O. Kwon, Y. Jin, Y. H. Choi,
+        B. Kang, K. S. Kim, T. Y. Roh, J. Choi, H. Lee, J.-H. Lee, J. K. Kim+, B.-K. Koo+, S.-W. Lee<br>
+        <span class="venue">Nature Communications</span>, 2026 <span class="status">(in press)</span>
+      </li>
+      <li>
+        <span class="pub-title">Intercellular cross-talk through lineage-specific gap junction of cancer-associated fibroblasts related to stromal fibrosis and prognosis</span>
+        <b>S. Cho</b>, J.-H. Oh, J. Baek, Y. Shin, W. Kim, J. Ko, E. Jun, D. Lee, S.-H. Kim+, I. Sohn+, C. O. Sung+<br>
+        <span class="venue">Scientific Reports</span> 13(1):14230, 2023
+      </li>
+    </ol>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:seongju6787@postech.ac.kr">seongju6787@postech.ac.kr</a></p>
+  </section>
+
+  <footer>Last updated: November 2026</footer>
+
+</main>
+</body>
+</html>
